@@ -147,34 +147,6 @@ SELECT Delhi_Location, COUNT(*) AS total_violations
 FROM fact_violation
 GROUP BY Delhi_Location;
 
--- PART 2 — GROUP BY, WHERE, HAVING, LIMIT, OFFSET, ORDER BY (20 Qs)
--- 1. Total fine collected per zone
--- 2. Number of violations per violation type
--- 3. Average fine amount per vehicle type (needs join)
--- 4. Zones having total fine amount above ₹50,00,000 (GROUP BY + HAVING)
--- 5. Violation types with more than 1000 occurrences (HAVING)
--- 6. Officers who've issued more than 300 challans (GROUP BY + HAVING)
--- 7. Show top 5 zones by total fine collected (GROUP BY + ORDER BY + LIMIT)
--- 8. Show zones ranked 6th–10th by total violations (LIMIT + OFFSET)
--- 9. Monthly violation count for 2025 only (WHERE + GROUP BY)
--- 10. Zones where average fine amount is above ₹3000, but only for "Over-speeding"
--- (WHERE + GROUP BY + HAVING together)
--- 11. Officers with more than 200 challans AND average penalty points above 3
--- (WHERE + HAVING combined)
--- 12. Violation type + zone combination with highest count (multi-column GROUP
--- BY)
--- 13. Vehicle types with unpaid fine total exceeding ₹10,00,000 (WHERE
--- Fine_Paid='No' + GROUP BY + HAVING)
--- 14. Top 3 violation types by total fine, excluding "Improper Parking" (WHERE +
--- GROUP BY + ORDER BY + LIMIT)
--- 15. Zones with count of violations between 1500 and 2500 (HAVING with range)
--- 16. Show 2nd highest fine-collecting zone only (ORDER BY + LIMIT + OFFSET)
--- 17. Rank/list registration states by number of violations, descending
--- 18. Grouping by both Delhi_Location and Violation_Type, only show groups with
--- count > 50
--- 19. Yearly + monthly violation trend (GROUP BY YEAR, MONTH together)
--- 20. Officers whose total fine collected is below the citywide average officer
--- collection (GROUP BY + HAVING with subquery)
 
 
 
